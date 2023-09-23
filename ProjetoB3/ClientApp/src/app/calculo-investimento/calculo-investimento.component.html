@@ -1,0 +1,17 @@
+<div>
+  <h1>Calculadora de Investimento</h1>
+
+  <label>Valor Inicial:</label>
+  <input type="number" [(ngModel)]="valorInicial" />
+
+  <label>Prazo em Meses:</label>
+  <input type="number" [(ngModel)]="prazoMeses" />
+
+  <button (click)="calcularInvestimento()">Calcular</button>
+
+  <div *ngIf="resultadoCalculado">
+    <h2>Resultado</h2>
+    <p>Valor Final: {{ valorFinal }}</p>
+    <p>Valor Liquido: {{ valorLiquido }}</p>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "6c84f375-63a9-4d17-b6be-ae24eddd62f5",
+		"name": "ProjetoB3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25047978",
+		"_collection_link": "https://crimson-escape-805993.postman.co/workspace/Projeto-B3~16466042-3427-4854-987f-1159dece7b5c/collection/25047978-6c84f375-63a9-4d17-b6be-ae24eddd62f5?action=share&source=collection_link&creator=25047978"
+	},
+	"item": [
+		{
+			"name": "Calcular",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"valorInicial\": 1000,\r\n  \"prazoMeses\": 12\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7247/api/investimento/calcular",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7247",
+					"path": [
+						"api",
+						"investimento",
+						"calcular"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
