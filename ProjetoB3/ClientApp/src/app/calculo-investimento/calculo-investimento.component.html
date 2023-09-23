@@ -1,5 +1,18 @@
 <div>
   <h1>Calculadora de Investimento</h1>
+  <div class="card text-white bg-primary mb-3">
+    <div class="card-header">Bem-vindo ao nosso Calculador de Investimentos!</div>
+    <div class="card-body">
+      <h4 class="card-title">Como utilizar esta ferramenta:</h4>
+      <p class="card-text">
+        Para começar, você precisará informar um <strong>valor monetário positivo</strong> e um
+        <strong>prazo em meses maior que 1</strong> para o resgate da aplicação.
+      </p>
+      <p class="card-text">
+        Após inserir essas informações, clique no botão 'Calcular' para ver o resultado bruto e líquido do seu investimento.
+      </p>
+    </div>
+  </div>
 
   <label>Valor Inicial:</label>
   <input type="number" [(ngModel)]="valorInicial" />
@@ -14,4 +27,9 @@
     <p>Valor Final: {{ valorFinal }}</p>
     <p>Valor Liquido: {{ valorLiquido }}</p>
   </div>
+
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
 </div>
