@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
 
-namespace YourNamespace.Controllers
+namespace ProjetoB3.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
