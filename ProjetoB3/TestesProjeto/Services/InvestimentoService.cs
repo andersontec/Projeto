@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ProjetoB3.Services
+namespace ProjetoB3.B3.Services
 {
     public class InvestimentoService
     {

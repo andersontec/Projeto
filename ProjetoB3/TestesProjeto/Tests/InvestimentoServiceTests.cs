@@ -1,7 +1,7 @@
 ﻿using Xunit;
-using ProjetoB3.Services;  // Certifique-se de que este namespace corresponda ao do serviço
+using ProjetoB3.B3.Services;
 
-namespace ProjetoB3.Tests
+namespace ProjetoB3.B3.Tests
 {
     public class InvestimentoServiceTests
     {
